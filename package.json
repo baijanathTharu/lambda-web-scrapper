@@ -1,0 +1,15 @@
+{
+  "name": "lambda-web-scrapper",
+  "version": "1.0.0",
+  "description": "web scrapper deployed on lambda function using puppeteer and nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Baijanath Tharu",
+  "license": "MIT",
+  "dependencies": {
+    "@sparticuz/chromium": "^118.0.0",
+    "puppeteer-core": "^21.4.0"
+  }
+}
