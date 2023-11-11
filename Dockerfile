@@ -1,4 +1,4 @@
-FROM amazon/aws-lambda-nodejs:20
+FROM amazon/aws-lambda-nodejs:18
 
 COPY ./package.json ./package-lock.json ./
 
