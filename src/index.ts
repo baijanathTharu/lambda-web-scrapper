@@ -1,5 +1,5 @@
-const puppeteer = require("puppeteer-core");
-const chromium = require("@sparticuz/chromium");
+import puppeteer from "puppeteer-core";
+import chromium from "@sparticuz/chromium";
 
 // Optional: If you'd like to use the legacy headless mode. "new" is the default.
 chromium.setHeadlessMode = true;
@@ -7,7 +7,7 @@ chromium.setHeadlessMode = true;
 // Optional: If you'd like to disable webgl, true is the default.
 chromium.setGraphicsMode = false;
 
-const handler = async (event = { url: "https://bntharu.com.np" }, context) => {
+const handler = async (event = { url: "https://bntharu.com.np" }) => {
   const executablePath = await chromium.executablePath;
   console.log(`executable path: ${executablePath}`);
 

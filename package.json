@@ -4,6 +4,7 @@
   "description": "web scrapper deployed on lambda function using puppeteer and nodejs",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf dist && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Baijanath Tharu",
@@ -11,5 +12,9 @@
   "dependencies": {
     "@sparticuz/chromium": "^118.0.0",
     "puppeteer-core": "^21.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "typescript": "^5.2.2"
   }
 }
