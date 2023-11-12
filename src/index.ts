@@ -7,7 +7,7 @@ chromium.setHeadlessMode = true;
 // Optional: If you'd like to disable webgl, true is the default.
 chromium.setGraphicsMode = false;
 
-const handler = async (event = { url: "https://bntharu.com.np" }) => {
+export const handler = async (event = { url: "https://bntharu.com.np" }) => {
   const executablePath = await chromium.executablePath;
   console.log(`executable path: ${executablePath}`);
 
@@ -36,5 +36,3 @@ const handler = async (event = { url: "https://bntharu.com.np" }) => {
     pageTitle,
   };
 };
-
-module.exports.handler = handler;
